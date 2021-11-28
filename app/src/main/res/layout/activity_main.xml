@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                />
+
+            <EditText
+                android:id="@+id/namaEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Isi nama lengkap "
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Npm"
+                />
+
+            <EditText
+                android:id="@+id/npmEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Isi Npm "
+                android:inputType="number"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jurusan"
+                />
+
+            <EditText
+                android:id="@+id/jurusanEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Isi Jurusan"
+                android:inputType="text"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Domisili Kampus"
+                />
+
+            <EditText
+                android:id="@+id/domisiliEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Isi Domisili"
+                android:inputType="text"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semester"
+                />
+
+            <EditText
+                android:id="@+id/semesterEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Isi Semester"
+                android:inputType="number"
+                android:layout_marginBottom="8dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                >
+                <Button
+                    android:id="@+id/simpanButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simpan"
+                    android:backgroundTint="@color/success"
+                    android:drawableLeft="@drawable/ic_baseline_save_24"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/batalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Batal"
+                    android:backgroundTint="@color/danger"
+                    android:drawableLeft="@drawable/ic_baseline_cancel_24"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
